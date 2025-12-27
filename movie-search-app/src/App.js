@@ -24,12 +24,13 @@ export default function App() {
 
 
     return (
-    <div className="min-h-screen bg-gray-100">
-            <header className="bg-blue-600 text-white shadow-md">
+    <div className="min-h-screen bg-gray-900 text-gray-100">
+            <header className="glass-header-dark text-white shadow-md">
                 <div className="max-w-6xl mx-auto px-4 py-4">
                     <h1 className="text-2xl font-bold">Movie Search</h1>
                 </div>
             </header>
+    <main className="max-w-6xl mx-auto px-4 py-8">
         {view === 'search' ? (
             <SearchPage
                 onMovieSelect={handleMovieSelect}
@@ -40,6 +41,7 @@ export default function App() {
             <MovieDetails movieId={selectedMovieId} onBack={handleBackToSearch} />
         )}
 
+        </main>
     </div>
     );
 }

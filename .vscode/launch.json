@@ -1,0 +1,16 @@
+{
+    // Launch configuration to start the CRA dev server and open Chrome.
+    // This configuration starts `npm start` in the movie-search-app folder
+    // then opens Chrome at http://localhost:3000.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/movie-search-app/src",
+            "preLaunchTask": "npm: start (movie-search-app)"
+        }
+    ]
+}
